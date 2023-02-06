@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import geSlice from './geSlice';
+import geSlice from './pokedexSlice';
 
 const store = configureStore({ reducer: geSlice });
 
