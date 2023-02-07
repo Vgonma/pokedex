@@ -15,8 +15,8 @@ function PokeCard({ pokemon }) {
         <img src={sprites.other['official-artwork'].front_default} alt="" />
       </div>
       <div className="info">
-        <h3 className="poke-name">{name}</h3>
-        <div className="poke-types">{types.map((type) => <p key={type.slot} className="type">{type.type.name}</p>)}</div>
+        <h2 className="poke-name uppercase">{name}</h2>
+        <div className="capitalize poke-types">{types.map((type) => <p key={type.slot} className="type">{type.type.name}</p>)}</div>
       </div>
     </Link>
   );

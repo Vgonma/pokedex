@@ -9,6 +9,8 @@ function Home() {
   const dispatch = useDispatch();
   const { pokemon, next, total } = useSelector((state) => state);
   const [hasMore, setHasMore] = useState(true);
+  const [query, setQuery] = useState('');
+
   useEffect(() => {
     if (!flag) {
       flag = true;
@@ -24,15 +26,22 @@ function Home() {
     dispatch(getNextPage(next));
   }
   return (
-    <div>
-      <InfiniteScroll
-        loadMore={() => getNext()}
-        hasMore={hasMore}
-      >
-        <h1>Home</h1>
-        <Pokedex pokemonInfo={pokemon} />
-      </InfiniteScroll>
-    </div>
+    <InfiniteScroll
+      id="home"
+      className="page"
+      loadMore={() => getNext()}
+      hasMore={hasMore}
+      loader="loading..."
+    >
+      <h1>Pokedex</h1>
+      <form>
+        <input className="search-bar" type="search" onChange={(e) => setQuery(e.target.value)} />
+      </form>
+      <Pokedex pokemonInfo={pokemon.filter((item) => (
+        query.toLowerCase() === '' ? item : item.name.toLowerCase().includes(query)
+      ))}
+      />
+    </InfiniteScroll>
   );
 }
 

@@ -14,7 +14,7 @@ function Details() {
   });
 
   return (
-    <>
+    <div className="page" id="details">
       <h1 className="capitalize">{`${pokemon.name} #${pokemon.order}`}</h1>
       <div className="sprite">
         <img
@@ -71,7 +71,7 @@ function Details() {
         </div>
       </div>
       <Link to="/">Back</Link>
-    </>
+    </div>
   );
 }
 
