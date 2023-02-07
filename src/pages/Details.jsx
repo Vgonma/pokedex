@@ -11,7 +11,7 @@ function Details() {
 
   useEffect(() => {
     fetchPokemon();
-  }, []);
+  });
 
   return (
     <>

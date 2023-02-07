@@ -14,7 +14,7 @@ function Home() {
       flag = true;
       dispatch(getData(0));
     }
-  }, []);
+  });
 
   function getNext() {
     if (pokemon.length === total) {
