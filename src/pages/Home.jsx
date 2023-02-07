@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getData, getNextPage } from '../redux/pokedexSlice';
+import Pokedex from '../components/Pokedex';
 
 let flag = false;
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
   return (
     <div>
       <h1>Home</h1>
+      <Pokedex pokemonInfo={pokemon} />
       <button type="button" onClick={getNext}>Load more</button>
     </div>
   );
