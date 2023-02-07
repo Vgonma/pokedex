@@ -142,3 +142,25 @@
   margin: 0;
   padding: 1rem;
 }
+
+@media screen and (max-width: 767px) {
+  .page-title {
+    font-size: 40px;
+  }
+
+  .head-banner {
+    flex-direction: column;
+  }
+
+  .pokedex {
+    grid-template-columns: 1fr;
+  }
+
+  .pokecard {
+    border: 1px solid #242424;
+  }
+
+  .search-form {
+    width: 90%;
+  }
+}
