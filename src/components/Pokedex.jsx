@@ -4,7 +4,7 @@ import PokeCard from './PokeCard';
 
 function Pokedex({ pokemonInfo }) {
   return (
-    <div>
+    <div className="pokedex">
       {pokemonInfo.map((pokemon) => (
         <PokeCard key={pokemon.id} pokemon={pokemon} />
       ))}

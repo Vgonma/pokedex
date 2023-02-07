@@ -1,7 +1,12 @@
+:root {
+  --blue: #35548b;
+}
+
 #root {
+  width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -11,4 +16,129 @@
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.type.normal {
+  background-color: #a8a878;
+}
+
+.type.fire {
+  background-color: #f08030;
+}
+
+.type.water {
+  background-color: #84abf8;
+}
+
+.type.grass {
+  background-color: #2cc952;
+}
+
+.type.electric {
+  background-color: #f8d030;
+}
+
+.type.fighting {
+  background-color: #c03028;
+}
+
+.type.poison {
+  background-color: #a040a0;
+}
+
+.type.ground {
+  background-color: #dfc068;
+}
+
+.type.flying {
+  background-color: #a890f0;
+}
+
+.type.psychic {
+  background-color: #f75887;
+}
+
+.type.bug {
+  background-color: #a8b820;
+}
+
+.type.rock {
+  background-color: #ab9645;
+}
+
+.type.ghost {
+  background-color: #705898;
+}
+
+.type.dark {
+  background-color: #705848;
+}
+
+.type.dragon {
+  background-color: #7038f8;
+}
+
+.type.steel {
+  background-color: #b8b8d0;
+}
+
+.type.fairy {
+  background-color: #e8b1b7;
+}
+
+.head-banner {
+  background-image: url('./assets/pokeball-banner-dark.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  place-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.page-title {
+  font-size: 80px;
+  margin: 1.5rem;
+}
+
+.search-form {
+  width: 100%;
+  max-width: 500px;
+  margin-inline: 2rem;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 500px;
+  height: 2rem;
+  padding: 1rem;
+}
+
+.pokedex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--blue);
+}
+
+.pokecard {
+  background-color: #5687e3;
+}
+
+.pokecard:nth-child(even) {
+  background-color: #4369b2;
+}
+
+.info {
+  color: white;
+}
+
+.poke-types {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.type {
+  margin: 0;
+  padding: 1rem;
 }

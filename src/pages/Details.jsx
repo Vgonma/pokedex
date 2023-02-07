@@ -70,7 +70,7 @@ function Details() {
             : ''}
         </div>
       </div>
-      <Link to="/">Back</Link>
+      <Link to="/"><button type="button">Back</button></Link>
     </div>
   );
 }

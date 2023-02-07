@@ -33,10 +33,12 @@ function Home() {
       hasMore={hasMore}
       loader="loading..."
     >
-      <h1>Pokedex</h1>
-      <form>
-        <input className="search-bar" type="search" onChange={(e) => setQuery(e.target.value)} />
-      </form>
+      <div className="head-banner">
+        <h1 className="page-title">Pokedex</h1>
+        <form className="search-form">
+          <input className="search-bar" type="search" onChange={(e) => setQuery(e.target.value)} placeholder="Pikachu" />
+        </form>
+      </div>
       <Pokedex pokemonInfo={pokemon.filter((item) => (
         query.toLowerCase() === '' ? item : item.name.toLowerCase().includes(query)
       ))}
