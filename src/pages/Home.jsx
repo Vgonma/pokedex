@@ -26,14 +26,11 @@ function Home() {
   return (
     <div>
       <InfiniteScroll
-        pageStart={0}
         loadMore={() => getNext()}
         hasMore={hasMore}
-        threshold={600}
       >
         <h1>Home</h1>
         <Pokedex pokemonInfo={pokemon} />
-        <button type="button" onClick={getNext}>Load more</button>
       </InfiniteScroll>
     </div>
   );
