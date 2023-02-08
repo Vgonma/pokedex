@@ -72,6 +72,7 @@
 
 
 - Check the live demo [here](https://pokedex-react-redux.onrender.com)
+- Check a video demo [here](https://www.loom.com/share/b841da63be68440bbc2ccab6c0cdf919)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
