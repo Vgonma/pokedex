@@ -178,6 +178,11 @@
   transform: rotate(-90deg);
 }
 
+.back-arrow > button {
+  padding: 1rem;
+  border-radius: 35%;
+}
+
 #poke-details-name {
   display: flex;
   justify-content: center;
@@ -262,5 +267,15 @@
   .badge {
     padding: 0 1rem;
     font-size: 1rem;
+  }
+
+  .back-arrow {
+    top: 10px;
+    left: 10px;
+  }
+
+  .back-arrow > button {
+    padding: 5px;
+    border-radius: 35%;
   }
 }
