@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import InfiniteScroll from 'react-infinite-scroller';
 import { getData, getNextPage } from '../redux/pokedexSlice';
 import Pokedex from '../components/Pokedex';
 import arrow from '../assets/up-arrow.png';
 
 let flag = false;
+let loadedAll = false;
 function Home() {
   const dispatch = useDispatch();
-  const { pokemon, next, total } = useSelector((state) => state);
-  const [hasMore, setHasMore] = useState(true);
+  const { pokemon } = useSelector((state) => state);
   const [query, setQuery] = useState('');
 
   useEffect(() => {
@@ -20,36 +19,33 @@ function Home() {
   });
 
   function getNext() {
-    if (pokemon.length === total) {
-      setHasMore(false);
-      return;
+    if (!loadedAll) {
+      loadedAll = true;
+      dispatch(getNextPage());
     }
-    dispatch(getNextPage(next));
   }
   return (
-    <InfiniteScroll
+    <div
       id="home"
       className="page"
-      loadMore={() => getNext()}
-      hasMore={hasMore}
-      loader="loading..."
     >
       <div className="head-banner">
         <a href="#home">
           <h1 className="page-title">Pokedex</h1>
         </a>
         <form className="search-form">
-          <input className="search-bar" type="search" onChange={(e) => setQuery(e.target.value)} placeholder="Pikachu" />
+          <input className="search-bar" type="search" onChange={(e) => { setQuery(e.target.value); getNext(); }} placeholder="Pikachu" />
         </form>
       </div>
       <Pokedex pokemonInfo={pokemon.filter((item) => (
         query.toLowerCase() === '' ? item : item.name.toLowerCase().includes(query)
       ))}
       />
+      <button className="load-all" type="button" onClick={getNext}>Load all</button>
       <a href="#home" className="top-arrow">
         <button type="button"><img src={arrow} alt="back to top" /></button>
       </a>
-    </InfiniteScroll>
+    </div>
   );
 }
 
