@@ -10,7 +10,6 @@ function Home() {
   const dispatch = useDispatch();
   const { pokemon } = useSelector((state) => state);
   const [query, setQuery] = useState('');
-
   useEffect(() => {
     if (!flag) {
       flag = true;
