@@ -1,0 +1,357 @@
+// Vitest Snapshot v1
+
+exports[`Should show head banner 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="page"
+        id="home"
+      >
+        <div
+          class="head-banner"
+        >
+          <a
+            href="#home"
+          >
+            <h1
+              class="page-title"
+            >
+              Pokedex
+            </h1>
+          </a>
+          <form
+            class="search-form"
+          >
+            <input
+              class="search-bar"
+              placeholder="Pikachu"
+              type="search"
+            />
+          </form>
+        </div>
+        <div
+          class="pokedex"
+        />
+        <a
+          class="top-arrow"
+          href="#home"
+        >
+          <button
+            type="button"
+          >
+            <img
+              alt="back to top"
+              src="/src/assets/up-arrow.png"
+            />
+          </button>
+        </a>
+        loading...
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="page"
+      id="home"
+    >
+      <div
+        class="head-banner"
+      >
+        <a
+          href="#home"
+        >
+          <h1
+            class="page-title"
+          >
+            Pokedex
+          </h1>
+        </a>
+        <form
+          class="search-form"
+        >
+          <input
+            class="search-bar"
+            placeholder="Pikachu"
+            type="search"
+          />
+        </form>
+      </div>
+      <div
+        class="pokedex"
+      />
+      <a
+        class="top-arrow"
+        href="#home"
+      >
+        <button
+          type="button"
+        >
+          <img
+            alt="back to top"
+            src="/src/assets/up-arrow.png"
+          />
+        </button>
+      </a>
+      loading...
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Should show head banner 2`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="page"
+        id="details"
+      >
+        <a
+          class="back-arrow"
+          href="/"
+        >
+          <button
+            type="button"
+          >
+            <img
+              alt="back to top"
+              src="/src/assets/up-arrow.png"
+            />
+          </button>
+        </a>
+        <h1
+          class="capitalize page-title"
+          id="poke-details-name"
+        >
+          undefined #undefined
+        </h1>
+        <div
+          class="sprite"
+        >
+          <img
+            alt=""
+            src=""
+          />
+        </div>
+        <div
+          class="details-info"
+        >
+          <div
+            class="list-container"
+          >
+            <div
+              class="height-weight"
+            >
+              <h2>
+                Height
+              </h2>
+              <h2>
+                Weight
+              </h2>
+            </div>
+          </div>
+          <div
+            class="list-container"
+          >
+            <h2>
+              Abilities
+            </h2>
+          </div>
+          <div
+            class="list-container"
+          >
+            <h2>
+              Stats
+            </h2>
+          </div>
+          <div
+            class="list-container"
+          >
+            <h2>
+              Games
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="page"
+      id="details"
+    >
+      <a
+        class="back-arrow"
+        href="/"
+      >
+        <button
+          type="button"
+        >
+          <img
+            alt="back to top"
+            src="/src/assets/up-arrow.png"
+          />
+        </button>
+      </a>
+      <h1
+        class="capitalize page-title"
+        id="poke-details-name"
+      >
+        undefined #undefined
+      </h1>
+      <div
+        class="sprite"
+      >
+        <img
+          alt=""
+          src=""
+        />
+      </div>
+      <div
+        class="details-info"
+      >
+        <div
+          class="list-container"
+        >
+          <div
+            class="height-weight"
+          >
+            <h2>
+              Height
+            </h2>
+            <h2>
+              Weight
+            </h2>
+          </div>
+        </div>
+        <div
+          class="list-container"
+        >
+          <h2>
+            Abilities
+          </h2>
+        </div>
+        <div
+          class="list-container"
+        >
+          <h2>
+            Stats
+          </h2>
+        </div>
+        <div
+          class="list-container"
+        >
+          <h2>
+            Games
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
