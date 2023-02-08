@@ -62,7 +62,6 @@
 ### Key Features <a name="key-features"></a>
 
 - **Single page app**
-- **Fast loading**
 - **Instant search**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
