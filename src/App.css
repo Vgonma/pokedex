@@ -4,7 +4,7 @@
 
 #root {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1600px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -86,6 +86,10 @@
   background-color: #e8b1b7;
 }
 
+.type.ice {
+  background-color: #98d8d8;
+}
+
 .head-banner {
   background-image: url('./assets/pokeball-banner-dark.jpg');
   background-repeat: no-repeat;
@@ -100,6 +104,7 @@
 .page-title {
   font-size: 80px;
   margin: 1.5rem;
+  text-shadow: 5px 5px 10px #333;
 }
 
 .search-form {
@@ -115,6 +120,11 @@
   padding: 1rem;
 }
 
+#home {
+  display: flex;
+  flex-direction: column;
+}
+
 .pokedex {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -123,6 +133,9 @@
 
 .pokecard {
   background-color: #5687e3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .pokecard:nth-child(even) {
@@ -133,14 +146,29 @@
   color: white;
 }
 
+.poke-name {
+  text-shadow: 5px 5px 5px #242424;
+}
+
 .poke-types {
   display: grid;
   grid-auto-flow: column;
 }
 
 .type {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 3px #242424;
+  font-weight: 700;
   margin: 0;
   padding: 1rem;
+}
+
+.top-arrow {
+  position: sticky;
+  bottom: 0;
+  margin-left: auto;
+  align-self: flex-end;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 767px) {

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import InfiniteScroll from 'react-infinite-scroller';
 import { getData, getNextPage } from '../redux/pokedexSlice';
 import Pokedex from '../components/Pokedex';
+import arrow from '../assets/up-arrow.png';
 
 let flag = false;
 function Home() {
@@ -43,6 +44,9 @@ function Home() {
         query.toLowerCase() === '' ? item : item.name.toLowerCase().includes(query)
       ))}
       />
+      <a href="#home" className="top-arrow">
+        <button type="button"><img src={arrow} alt="back to top" /></button>
+      </a>
     </InfiniteScroll>
   );
 }
