@@ -16,7 +16,7 @@ function PokeCard({ pokemon }) {
       </div>
       <div className="info">
         <h2 className="poke-name uppercase">{name}</h2>
-        <div className="capitalize poke-types">{types.map((type) => <p key={type.slot} className="type">{type.type.name}</p>)}</div>
+        <div className="capitalize poke-types">{types.map((type) => <p key={type.slot} className={`type ${type.type.name}`}>{type.type.name}</p>)}</div>
       </div>
     </Link>
   );
