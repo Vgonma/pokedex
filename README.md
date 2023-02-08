@@ -23,12 +23,12 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Project Name] <a name="about-project"></a>
+# 📖 [Pokedex] <a name="about-project"></a>
 
 
 
 
-**[Projec Name]** is a simple react application that lets you use a calculator online.
+**Pokedex** is a React-Redux webapp using the [pokeAPI](https://pokeapi.co/) to get pokemon data and display it in an convenient grid.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -39,6 +39,7 @@
   <summary>Functionality</summary>
   <ul>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
   </ul>
 </details>
 
@@ -61,8 +62,8 @@
 ### Key Features <a name="key-features"></a>
 
 - **Single page app**
-- **Compact**
-- **Simple to use**
+- **Fast loading**
+- **Instant search**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -71,7 +72,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- Check the live demo [here]()
+- Check the live demo [here](https://pokedex-react-redux.onrender.com)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -94,8 +95,8 @@ Clone this repository to your desired folder:
 
 
 ```cd my-folder   
-    git clone git@github.com:Vgonma/math-magician.git
-    cd leaderboard
+    git clone git@github.com:Vgonma/pokedex.git
+    cd pokedex
 ```
 Install dependencies:
 ```
@@ -108,32 +109,24 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the app in development mode.
+Open [http://localhost:5173/](http://localhost:5173/) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
+Builds the app for production to the `dist` folder.\
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### Usage
 
 To run the project open the html file in your web browser.
-
-### Deployment
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,9 +146,9 @@ To run the project open the html file in your web browser.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Feature 1**
-- [ ] **Feature 2**
-- [ ] **Feature 3**
+- [ ] **Filter by type**
+- [ ] **Filter by region**
+- [ ] **Filter by game**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,7 +174,8 @@ If you like this project feel free to give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to thank Microverse for starting us in this project.
+[Original design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance.\
+I would like to thank Microverse for starting me in this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
