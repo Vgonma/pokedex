@@ -61,6 +61,10 @@ const geSlice = createSlice({
         prevState.loading = false;
         prevState.pokemon = [...state.pokemon, ...action.payload.pokemon];
         prevState.next = action.payload.next;
+      })
+      .addCase(getNextPage.pending, (state) => {
+        const prevState = state;
+        prevState.loading = true;
       });
   },
 });
