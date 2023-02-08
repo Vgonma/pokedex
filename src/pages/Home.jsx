@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import { getData, getNextPage } from '../redux/pokedexSlice';
 import Pokedex from '../components/Pokedex';
 import arrow from '../assets/up-arrow.png';
@@ -29,9 +30,9 @@ function Home() {
       className="page"
     >
       <div className="head-banner">
-        <a href="#home">
+        <NavLink to="#home">
           <h1 className="page-title">Pokedex</h1>
-        </a>
+        </NavLink>
         <form className="search-form">
           <input className="search-bar" type="search" onChange={(e) => { setQuery(e.target.value); getNext(); }} placeholder="Pikachu" />
         </form>
