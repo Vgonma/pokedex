@@ -35,7 +35,9 @@ function Home() {
       loader="loading..."
     >
       <div className="head-banner">
-        <h1 className="page-title">Pokedex</h1>
+        <a href="#home">
+          <h1 className="page-title">Pokedex</h1>
+        </a>
         <form className="search-form">
           <input className="search-bar" type="search" onChange={(e) => setQuery(e.target.value)} placeholder="Pikachu" />
         </form>

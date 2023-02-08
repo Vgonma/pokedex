@@ -6,7 +6,7 @@ const GET_NEXT = 'getNext';
 
 // Aditional Action Creators
 export const getData = createAsyncThunk(GET_DATA, async (page = 0) => (
-  fetch(`https://pokeapi.co/api/v2/pokemon?limit=10000&offset=${10 * page}`)
+  fetch(`https://pokeapi.co/api/v2/pokemon?limit=10&offset=${10 * page}`)
     .then((response) => response.json())
     .then((data) => ( // Data contains the name and url for each individual pokemon.
       Promise.all(
