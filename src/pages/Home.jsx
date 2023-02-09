@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import { RxGear } from 'react-icons/Rx';
+import { BsMic } from 'react-icons/bs';
 import { getData, getNextPage } from '../redux/pokedexSlice';
 import Pokedex from '../components/Pokedex';
 import arrow from '../assets/up-arrow.png';
@@ -36,6 +38,10 @@ function Home() {
         <form className="search-form">
           <input className="search-bar" type="search" onChange={(e) => { setQuery(e.target.value); getNext(); }} placeholder="Pikachu" />
         </form>
+        <div className="icons">
+          <BsMic className="icon" />
+          <RxGear className="icon" />
+        </div>
       </div>
       <Pokedex pokemonInfo={pokemon.filter((item) => (
         query.toLowerCase() === '' ? item : item.name.toLowerCase().includes(query)

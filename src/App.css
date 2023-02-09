@@ -248,6 +248,22 @@
   padding: 0 3rem;
 }
 
+.icons {
+  display: flex;
+  margin: 24px;
+  gap: 1.5rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.icon:active {
+  transform: scale(0.9);
+}
+
 @media screen and (max-width: 767px) {
   .page-title {
     font-size: 40px;
