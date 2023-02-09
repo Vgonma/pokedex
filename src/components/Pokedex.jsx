@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { shape } from 'prop-types';
 import PokeCard from './PokeCard';
 
 function Pokedex({ pokemonInfo }) {
@@ -13,7 +13,6 @@ function Pokedex({ pokemonInfo }) {
 }
 
 Pokedex.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  pokemonInfo: PropTypes.array.isRequired,
+  pokemonInfo: PropTypes.arrayOf(shape).isRequired,
 };
 export default Pokedex;

@@ -1,18 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import arrow from '../assets/up-arrow.png';
 
 function Details() {
   const { name } = useParams();
-  const [pokemon, setPokemon] = useState([]);
-
-  const fetchPokemon = async () => fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
-    .then((response) => response.json())
-    .then((data) => setPokemon(data));
-
-  useEffect(() => {
-    fetchPokemon();
-  });
+  const [pokemon] = useSelector((state) => state.pokemon.filter((pok) => pok.name === name));
 
   return (
     <div className="page" id="details">
