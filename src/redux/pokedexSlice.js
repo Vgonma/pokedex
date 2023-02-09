@@ -1,8 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 // Actions
-const GET_DATA = 'redux/pokedexSlice/GET_DATA';
-const GET_NEXT = 'redux/pokedexSlice/GET_NEXT';
+export const GET_DATA = 'redux/pokedexSlice/GET_DATA';
+export const GET_NEXT = 'redux/pokedexSlice/GET_NEXT';
 
 // Aditional Action Creators
 export const getData = createAsyncThunk(GET_DATA, async (page = 0) => (

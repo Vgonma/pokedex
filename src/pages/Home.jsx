@@ -32,7 +32,7 @@ function Home() {
       className="page"
     >
       <div className="head-banner">
-        <NavLink to="#home">
+        <NavLink to="/">
           <h1 className="page-title">Pokedex</h1>
         </NavLink>
         <form className="search-form">
