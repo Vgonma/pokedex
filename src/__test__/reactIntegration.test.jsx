@@ -1,27 +1,38 @@
-import { test, expect, afterEach } from 'vitest';
-import { cleanup, render, screen } from '@testing-library/react';
+import {
+  test,
+  expect,
+  afterEach,
+} from 'vitest';
+import {
+  cleanup,
+  render,
+  screen,
+} from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import Home from '../pages/Home';
-import Details from '../pages/Details';
+import App from '../App';
 import store from '../redux/storeConfig';
 
 afterEach(cleanup);
-test('Should show head banner', () => {
-  const tree = render(<Provider store={store}><Home /></Provider>);
-  expect(tree).toMatchSnapshot();
-});
-test('Should show head banner', () => {
-  render(<Provider store={store}><Home /></Provider>);
-  expect(screen.getByText(/Pokedex/i)).toBeDefined();
-});
-test('Should show head banner', () => {
+
+test('Should render App', () => {
   const tree = render(
     <BrowserRouter>
       <Provider store={store}>
-        <Details />
+        <App />
       </Provider>
     </BrowserRouter>,
   );
   expect(tree).toMatchSnapshot();
+});
+
+test('Should match Home snapshot', () => {
+  const tree = render(<BrowserRouter><Provider store={store}><Home /></Provider></BrowserRouter>);
+  expect(tree).toMatchSnapshot();
+});
+
+test('Should show head banner', () => {
+  render(<BrowserRouter><Provider store={store}><Home /></Provider></BrowserRouter>);
+  expect(screen.getByText(/Pokedex/i)).toBeDefined();
 });
